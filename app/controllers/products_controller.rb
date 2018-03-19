@@ -6,4 +6,9 @@ class ProductsController < ApplicationController
   def add
     
   end
+
+  private
+  def strong_params
+    params.permit(:product)
+  end
 end
