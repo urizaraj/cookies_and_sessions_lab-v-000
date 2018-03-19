@@ -5,7 +5,7 @@
   <%= submit_tag 'add to cart' %>
 <% end %>
 
-<% if @cart %>
+<% if @cart && @cart.size > 0 %>
   <% @cart.each do |item| %>
     <h2><%= item %></h2>
   <% end %>
