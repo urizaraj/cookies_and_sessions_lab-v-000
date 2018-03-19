@@ -4,3 +4,11 @@
   <%= text_field_tag :product %><br>
   <%= submit_tag 'Add to Cart' %>
 <% end %>
+
+<% if @cart.size > 0 do  %>
+  <% @cart.each do |item| %>
+    <h2><%= item %></h2>
+  <% end %>
+<% else %>
+  <h2>There are no items in your cart</h2>
+<% end %>
