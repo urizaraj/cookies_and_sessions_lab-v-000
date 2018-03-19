@@ -5,6 +5,7 @@ class ProductsController < ApplicationController
 
   def add
     cart << strong_params[:product]
+    redirect_back
   end
 
   private
