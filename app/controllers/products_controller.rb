@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   end
 
   def add
-    
+    cart << strong_params[:product]
   end
 
   private
